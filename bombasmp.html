@@ -24,6 +24,17 @@
           display: flex;
           flex-direction: column;
       }
+      
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+      
+      li {
+        padding-left: 0;
+        margin-left: 0;
+      }
 
       nav {
           display: flex;
@@ -122,23 +133,45 @@
     </div>
 
     <div id="about" class="section">
-        <h2>About</h2>
-        <p>Tired of rules and P2W? Welcome to bombaSMP, the raw Minecraft experience!
-
-🔥 Unrestricted PvP & Raiding: Everything is allowed. No world borders, no mercy. Your defense is your only protection. 
-
-💎 Diamond-Based Economy: Wealth Through Power
-Forget worthless virtual currency. On this server, your wealth is backed by physical Diamonds. /deposit & /withdraw your riches./market or /ah to trade; /sell [price] to list items./baltop to see who rules the economy.
-
-🛡️ Teams & Vaults:/team create & /team sethome to coordinate with allies./teamchat for secret raids.
- /vault to access 27 secure slots that remain completely untouched, even if your base gets raided.
-
-.🛠️ Professional Stability & Vision
-bombaSMP runs on high-performance hardware with professional Anti-Cheat and administration plugins working silently in the background. We keep the world open and free while ensuring the server stays lag-free and exploits are blocked. 
-We are currently finalizing our spawn area and adding new features to keep the world growing.
-This isn't just a server; it's a test of survival.Be ready to fight.
-
-📍 Server IP: bombaSMP.org</p>
+      <h2>About</h2>
+      
+      <p>
+        Tired of rules and P2W? Welcome to bombaSMP, the raw Minecraft experience!
+      </p>
+    
+      <h3>🔥 Unrestricted PvP & Raiding</h3>
+      <p>
+        Everything is allowed. No world borders, no mercy. Your defense is your only protection.
+      </p>
+    
+      <h3>💎 Diamond-Based Economy</h3>
+      <p>
+        Wealth Through Power. Forget worthless virtual currency. On this server, your wealth is backed by physical Diamonds.
+      </p>
+      <ul>
+        <li>/deposit & /withdraw your riches</li>
+        <li>/market or /ah to trade</li>
+        <li>/sell [price] to list items</li>
+        <li>/baltop to see who rules the economy</li>
+      </ul>
+    
+      <h3>🛡️ Teams & Vaults</h3>
+      <ul>
+        <li>/team create & /team sethome to coordinate with allies</li>
+        <li>/teamchat for secret raids</li>
+        <li>/vault to access 27 secure slots that remain completely untouched, even if your base gets raided</li>
+      </ul>
+    
+      <h3>🛠️ Professional Stability & Vision</h3>
+      <p>
+        bombaSMP runs on high-performance hardware with professional Anti-Cheat and administration plugins working silently in the background. We keep the world open and free while ensuring the server stays lag-free and exploits are blocked.
+      </p>
+      <p>
+        We are currently finalizing our spawn area and adding new features to keep the world growing. This isn't just a server; it's a test of survival. Be ready to fight.
+      </p>
+    
+      <h3>📍 Server IP</h3>
+      <p><strong>bombaSMP.org</strong></p>
     </div>
     
     <div id="vote" class="section">
@@ -151,15 +184,15 @@ This isn't just a server; it's a test of survival.Be ready to fight.
       document.addEventListener('DOMContentLoaded', function() {
           const titleElement = document.querySelector('.gradient-text');
           
-         
+
           titleElement.addEventListener('click', function() {
               this.style.transform = 'scale(1.1)';
               setTimeout(() => {
                   this.style.transform = 'scale(1)';
               }, 200);
           });
-
           
+
           titleElement.addEventListener('mouseenter', function() {
               this.style.transition = 'transform 0.3s ease';
               this.style.transform = 'scale(1.05)';
@@ -177,7 +210,9 @@ This isn't just a server; it's a test of survival.Be ready to fight.
               section.classList.remove('active');
           });
       
+
           document.querySelector('.main-content').style.display = 'none';
+      
 
           document.getElementById(sectionId).classList.add('active');
       }
