@@ -123,7 +123,21 @@
 
     <div id="about" class="section">
         <h2>About</h2>
-        <p>Welcome to Bomba SMP! This is an amazing multiplayer server experience.</p>
+        <p>Tired of rules and P2W? Welcome to bombaSMP, the raw Minecraft experience!
+
+🔥 Unrestricted PvP & Raiding: Everything is allowed. No world borders, no mercy. Your defense is your only protection. 
+
+💎 Diamond-Based Economy: Wealth Through Power
+Forget worthless virtual currency. On this server, your wealth is backed by physical Diamonds. /deposit & /withdraw your riches./market or /ah to trade; /sell [price] to list items./baltop to see who rules the economy.
+
+🛡️ Teams & Vaults:/team create & /team sethome to coordinate with allies./teamchat for secret raids./vault for 27 secure slots to protect your loot even if raided.
+
+.🛠️ Professional Stability & Vision
+bombaSMP runs on high-performance hardware with professional Anti-Cheat and administration plugins working silently in the background. We keep the world open and free while ensuring the server stays lag-free and exploits are blocked. 
+We are currently finalizing our spawn area and adding new features to keep the world growing.
+This isn't just a server; it's a test of survival.Be ready to fight.
+
+📍 Server IP: bombaSMP.org</p>
     </div>
     
     <div id="vote" class="section">
@@ -132,19 +146,19 @@
     </div>
     
     <script>
-      // Add interactive effects when the page loads
+
       document.addEventListener('DOMContentLoaded', function() {
           const titleElement = document.querySelector('.gradient-text');
           
-          // Add a click effect
+         
           titleElement.addEventListener('click', function() {
               this.style.transform = 'scale(1.1)';
               setTimeout(() => {
                   this.style.transform = 'scale(1)';
               }, 200);
           });
+
           
-          // Add smooth hover effect
           titleElement.addEventListener('mouseenter', function() {
               this.style.transition = 'transform 0.3s ease';
               this.style.transform = 'scale(1.05)';
@@ -156,16 +170,14 @@
       });
 
       function showSection(sectionId) {
-          // Hide all sections
+
           const sections = document.querySelectorAll('.section');
           sections.forEach(section => {
               section.classList.remove('active');
           });
       
-          // Hide the title
           document.querySelector('.main-content').style.display = 'none';
-      
-          // Show selected section
+
           document.getElementById(sectionId).classList.add('active');
       }
       </script>
