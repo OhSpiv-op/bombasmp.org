@@ -142,6 +142,43 @@
       .section strong {
           color: #ff6b6b;
       }
+
+      .vote-sites-container {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          margin-top: 30px;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 25px;
+          border: 3px solid #ff0000;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .vote-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(90deg, #ff0000 0%, #ff6b6b 50%, #ff0000 100%);
+          border: none;
+          border-radius: 8px;
+          padding: 16px 20px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: 'Minecraft', sans-serif;
+      }
+
+      .vote-button:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+          filter: brightness(1.15);
+      }
     </style>
 </head>
 <body>
@@ -199,7 +236,30 @@
     
     <div id="vote" class="section">
         <h2>Vote for the server to get rewards!</h2>
-        <p>Feature being added soon!</p>
+        
+        <div class="vote-sites-container">
+            <a href="https://minecraft.menu" target="_blank" class="vote-button">
+                <span>MINECRAFT.MENU</span>
+            </a>
+            <a href="https://findmcserver.com" target="_blank" class="vote-button">
+                <span>FINDMCSERVER.COM</span>
+            </a>
+            <a href="https://minecraft-serverlist.com" target="_blank" class="vote-button">
+                <span>MINECRAFT-SERVERLIST.COM</span>
+            </a>
+            <a href="https://minecraftservers.org" target="_blank" class="vote-button">
+                <span>MINECRAFTSERVERS.ORG</span>
+            </a>
+            <a href="https://minecraft-mp.com" target="_blank" class="vote-button">
+                <span>MINECRAFT-MP.COM</span>
+            </a>
+            <a href="https://mclike.com" target="_blank" class="vote-button">
+                <span>MCLIKE.COM</span>
+            </a>
+            <a href="https://play-minecraft-servers.com" target="_blank" class="vote-button">
+                <span>PLAY-MINECRAFT-SERVERS.COM</span>
+            </a>
+        </div>
     </div>
     
     <script>
